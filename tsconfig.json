@@ -1,17 +1,35 @@
-/*
-  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
-  It is not intended to be used to perform a compilation.
-
-  To learn more about this file see: https://angular.io/config/solution-tsconfig.
-*/
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-]
+  "compilerOptions": {
+    "alwaysStrict": true,
+    // TODO Needed because of Apollo https://github.com/apollographql/apollo-server/issues/1182, this should be considered a bug with Apollo
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "target": "es6",
+    "rootDir": "./src",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "strict": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "e2e/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "dist",
+    "e2e/*"
+  ]
 }
