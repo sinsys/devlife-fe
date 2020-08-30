@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+:host {
+  .title {
+    color: $white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    background: rgba(0,0,0,0.25);
+    width: 100%;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.5);
+  }
+  .suffix {
+    color: $light-gray;
+  }
+  .description {
+    font-size: 1.25rem;
+    color: $white;
+    text-shadow: 1px 1px 2px $lilac;
+    padding: 1rem 0;
+  }
+  .quote-extended {
+    color: $lilac;
+    margin: 1rem 0 1rem 1rem;
+    text-align: right;
+  }
+}
