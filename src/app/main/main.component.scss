@@ -17,14 +17,14 @@
   .description {
     font-size: 1.25rem;
     color: $white;
-    text-shadow: 1px 1px 2px $lilac;
+    text-shadow: 1px 1px 2px $white;
     padding: 1rem 0;
   }
-  .quote {
-    padding: 0 1rem;
+  .quote p {
+    padding: 0 1rem 1rem 1rem;
   }
   .quote-extended {
-    color: $lilac;
+    color: $white;
     margin: 1rem 0 1rem 1rem;
     text-align: right;
   }
