@@ -1,4 +1,8 @@
 :host {
-  width: 90vw;
-  height: 100px;
+  .terminal {
+    height: 85px;
+    ::ng-deep .terminal.xterm {
+      padding: 1rem;
+    }
+  }
 }
