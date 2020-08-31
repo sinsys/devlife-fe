@@ -20,9 +20,13 @@
     text-shadow: 1px 1px 2px $lilac;
     padding: 1rem 0;
   }
+  .quote {
+    padding: 0 1rem;
+  }
   .quote-extended {
     color: $lilac;
     margin: 1rem 0 1rem 1rem;
     text-align: right;
   }
+
 }

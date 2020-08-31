@@ -4,12 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "eslint . --ext .ts",
     "e2e": "ng e2e",
-    "predeploy": "npm run build --prod",
-    "deploy": "aws s3 sync dist/devlife/ s3://devlife.ninja/ --delete"
+    "predeploy": "npm run build -- --prod",
+    "deploy": "aws s3 sync dist/devlife/ s3://devlife.ninja/ --delete",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id E5WC8S99D8ZU0 --paths /index.html"
   },
   "private": true,
   "dependencies": {
@@ -26,7 +27,9 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "ng-terminal": "^3.0.0-alpha",
     "rxjs": "~6.5.5",
+    "serverless-s3-sync": "^1.14.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

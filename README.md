@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the front end code for (devlife.ninja)[https://devlife.ninja]. It serves as a sandbox, playground, blog, portfolio, and overall personal site representing the works and life of Nicholas Hazel.
+This is the front end code for [devlife.ninja](https://devlife.ninja). It serves as a sandbox, playground, blog, portfolio, and overall personal site representing the works and life of Nicholas Hazel.
 
 ## Technology
 
