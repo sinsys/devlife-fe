@@ -1,0 +1,15 @@
+@import 'colors';
+
+:host {
+  min-width: 100vw;
+  .title {
+    color: $white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    background: rgba(0,0,0,0.25);
+    width: 100%;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.5);
+  }
+}

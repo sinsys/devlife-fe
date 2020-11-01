@@ -1,0 +1,21 @@
+:host {
+  .code-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    fa-icon {
+      display: flex;
+      justify-content: center;
+      margin: 0.5rem;
+      font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+      padding: 1rem;
+      border-radius: 100%;
+      background: rgba(0,0,0,0.1);
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    }
+  }
+}
