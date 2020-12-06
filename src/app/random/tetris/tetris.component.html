@@ -1,0 +1,20 @@
+<div class="tetris">
+  <div class="pieces">
+    <div class="piece current">
+      <img [src]="currentPiece" alt="current piece">
+    </div>
+  </div>
+  <div class="controls">
+    <a (click)="getNextPiece()" class="gradient-button gradient-button-4">
+      Use
+    </a>
+    <div class="piece next">
+      <h3>Next:</h3>
+      <img [src]="nextPiece" alt="next piece">
+    </div>
+  </div>
+  <div class="log">
+    <h3>Hist:</h3>
+    <img *ngFor="let piece of pieceHistory.slice().reverse()" [src]="baseStr + piece + suffix" alt="{{piece}} piece">
+  </div>
+</div>
