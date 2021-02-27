@@ -1,0 +1,18 @@
+:host {
+  .code-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    background: rgba(0,0,0,0.5);
+
+    fa-icon {
+      display: flex;
+      justify-content: center;
+      margin: 0.5rem;
+      font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

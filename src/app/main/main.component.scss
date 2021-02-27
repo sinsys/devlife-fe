@@ -1,51 +1,51 @@
-@import '../../styles.scss';
+@import 'colors';
 
 :host {
-  .title {
-    color: $white;
-    text-align: center;
+  h2 {
     font-size: 2rem;
-    padding: 2rem 0;
-    margin-bottom: 1rem;
-    background: rgba(0,0,0,0.25);
+    margin: 1rem;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
     width: 100%;
-    box-shadow: 0 1rem 1rem rgba(0,0,0,0.5);
+    text-align: left;
+    line-height: 3rem;
+    max-width: 960px;
   }
+  .app_page {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .suffix {
     color: $light-gray;
     font-size: 1.25rem;
   }
-  .description {
+  .terminal {
     font-size: 1.25rem;
     color: $white;
     text-shadow: 1px 1px 2px $white;
     padding: 1rem 0;
-    width: 92vw;
+    width: 100%;
+    max-width: 800px;
     margin: 0 4vw;
   }
-  .quote p {
-    padding: 0 1rem 1rem 1rem;
-  }
-  .quote-extended {
-    color: $white;
-    margin: 1rem 0 1rem 1rem;
-    text-align: right;
-  }
-  .code-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    fa-icon {
-      display: flex;
-      justify-content: center;
-      margin: 0.5rem;
-      font-size: 2rem;
-      width: 2rem;
-      height: 2rem;
-      padding: 1rem;
-      border-radius: 100%;
-      background: rgba(0,0,0,0.1);
-      box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+  .description {
+    background: #F2EECB;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    border-radius: 3px;
+    margin: 1rem;
+    blockquote {
+      color: #333333;
+      line-height: 1.5rem;
+      span {
+        color: #666699;
+        font-weight: bold;
+        display: block;
+        text-align: right;
+      }
     }
+    padding: 1rem;
   }
 }

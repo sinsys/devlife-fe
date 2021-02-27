@@ -1,22 +1,15 @@
 <div class="app_page">
-  <h1 class="title">
-    DevLife<span class="suffix">.ninja</span>
-  </h1>
-  <div class="description">
+  <app-header></app-header>
+  <div class="terminal">
     <app-terminal></app-terminal>
-    <p class="code-icons">
-      <fa-icon [icon]="faCode"></fa-icon>
-      <fa-icon [icon]="faCoffee"></fa-icon>
-      <fa-icon [icon]="faAngular"></fa-icon>
-      <fa-icon [icon]="faReact"></fa-icon>
-      <fa-icon [icon]="faNodeJs"></fa-icon>
-      <fa-icon [icon]="faAws"></fa-icon>
-      <fa-icon [icon]="faGithub"></fa-icon>
-      <fa-icon [icon]="faJsSquare"></fa-icon>
-      <fa-icon [icon]="faLinux"></fa-icon>
-      <fa-icon [icon]="faNpm"></fa-icon>
-      <fa-icon [icon]="faSlack"></fa-icon>
-      <fa-icon [icon]="faStackOverflow"></fa-icon>
-    </p>
   </div>
+  <div class="description">
+    <blockquote>
+      "Bad programmers worry about the code...<br />
+      Good programmers worry about data structures and their relationships."
+      <span>- Linus Torvalds</span>
+    </blockquote>
+  </div>
+  <app-code-icons></app-code-icons>
+  <h2>Who Am I?</h2>
 </div>

@@ -1,0 +1,21 @@
+@import 'colors';
+
+:host {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(90,103,138);
+  // background: radial-gradient(circle, rgba(90,103,138,1) 50%, rgba(19,42,99,1) 100%);
+  background: url('../../../assets/images/background-explore.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  .app-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
