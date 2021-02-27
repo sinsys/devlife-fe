@@ -13,7 +13,7 @@ export class TerminalComponent implements AfterViewInit {
   ) child!: NgTerminal
 
   terminalText = [
-    'My name is Nicholas Hazel',
+    '$ My name is Nicholas Hazel',
     'I breathe code... and drink coffee',
     'Welcome to my world... >>>'
   ]

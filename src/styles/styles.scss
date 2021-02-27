@@ -2,6 +2,10 @@
 @import 'typography';
 @import 'colors';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   min-width: 100vw;
   min-height: 100vh;
